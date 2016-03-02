@@ -1,0 +1,127 @@
+/* Fonts */
+.grotesk-light-italic {
+	font-family: 'grotesk-light-italic';
+	font-size: 3em;
+}
+.elzevir-book {
+	font-family: 'elzevir-book';
+	font-size: 0.5em;
+}
+.elzevir-body {
+	font-family: 'elzevir-body';
+	font-size: 0.15em;
+}
+.elzevir-normal {
+	font-family: 'elzevir-normal';
+	font-size: 0.5em;
+}
+
+.fell-normal {
+	font-family: 'fell-normal';
+	font-size: 2em;
+}
+
+#elzevir-body-glyph {
+	font-size: 270px;
+}
+
+/* General settings */
+body {
+	text-align: center;
+	font-size: 8em;
+	transition: all 2000ms ease;
+}
+
+.pa2 {
+	padding: 2em;
+}
+
+.center-hv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.legend {
+	border-bottom: 1px solid white;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: white;
+	font-family: monospace;
+	margin: 5em auto;
+	/*margin-bottom: 5em;*/
+}
+
+/* Colors */
+.white { color: #EEE; }
+.bg-white { background-color: #FFF; }
+.purple-lightest { color: #E498F4; }
+.bg-purple-lightest { background-color: #E498F4; }
+.purple-light { color: #9B26AF; }
+.bg-purple-light { background-color: #9B26AF; }
+.purple-medium { color: #7A1EA1; }
+.bg-purple-medium { background-color: #7A1EA1; }
+.purple-dark { color: #4A0E6F; }
+.bg-purple-dark, .dark { background-color: #4A0E6F; }
+.purple-darkest { color: #340456; }
+.bg-purple-darkest, .darkest { background-color: #340456; }
+.green, .light { color: #68EFAD; }
+.bg-green { background-color: #68EFAD; }
+
+.gradient {
+	background: -moz-linear-gradient(top,  #9b26af 0%, #691a99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #9b26af 0%,#691a99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #9b26af 0%,#691a99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b26af', endColorstr='#691a99',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-img-wrap {
+	position: relative;
+}
+
+.bg-img {
+	background-image: url('../img/bg.png');
+	font-size: 100px;
+	min-height: 400px;
+}
+
+.bg-img-switch {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	display: flex;
+}
+
+.bg-img-switch > div {
+	font-size: 14px;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	flex-direction: row;
+	margin-left: 10px;
+	transform: rotate(45deg);
+}
+
+/* Media-queries */
+
+/* Small screens */
+@media only screen and (max-width: 40em) /* max-width 640px, mobile-only styles, use when QAing mobile issues */ {
+
+}
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) /* min-width 641px, medium screens */ {
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) /* min-width 1025px, large screens */ {
+
+}
+
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) /* min-width 1441px, xlarge screens */ {
+
+}

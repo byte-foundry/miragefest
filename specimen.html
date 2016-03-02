@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/foundation-6/css/foundation-flex.css"></link>
+		<link rel="stylesheet" href="css/specimen.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	</head>
+	<body class="bg-purple-dark green">
+
+		<div class="row legend pa2">
+			thickness / window width
+		</div>
+
+		<div class="row bg-purple-dark">
+			<div id="grotesk-light-italic" class="small-12 large-12 columns getPx grotesk-light-italic">
+				Hello
+			</div>
+		</div>
+
+		<div class="row legend pa2">
+			thickness / background brightness
+		</div>
+
+		<div class="row bg-purple-dark white center-hv">
+			<div class="columns small-12 large-12 green elzevir-book bg-img-wrap" bg="dark">
+				<div class="bg-img-switch">
+					<div id="purple-lightest" class="bg-purple-lightest">•</div>
+					<div id="purple-light" class="bg-purple-light">•</div>
+					<div id="purple-medium" class="bg-purple-medium">•</div>
+					<div id="purple-dark" class="bg-purple-dark">•</div>
+					<div id="purple-darkest" class="bg-purple-darkest">•</div>
+				</div>
+				<div id="bg-img" class="bg-img center-hv bg-purple-medium">
+					Responsive typeface
+				</div>
+			</div>
+		</div>
+
+		<div class="row legend pa2">
+			serifs + width / window width
+		</div>
+
+		<div class="row bg-white">
+			<div id="elzevir-body" class="small-12 large-6 columns elzevir-body purple-dark center-hv">
+				<div class="pa2">
+					Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
+				</div>
+			</div>
+			<div id="elzevir-body-glyph" class="small-12 large-6 columns elzevir-body">
+				P
+			</div>
+		</div>
+
+		<div class="row legend pa2">
+			thickness / scroll
+		</div>
+
+		<div class="row bg-purple-dark purple-medium">
+			<div id="elzevir-normal" class="small-12 large-12 columns elzevir-normal center-hv">
+				Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
+				Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+				Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+				Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod.
+				Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
+			</div>
+		</div>
+
+		<div class="row legend pa2">
+			width / length
+		</div>
+
+		<div class="row bg-purple-dark">
+			<div id="fell-normal" contenteditable class="stringLength small-12 large-12 columns getPx fell-normal">
+				.
+			</div>
+		</div>
+
+	</body>
+
+	<canvas id="canvas" style="display:none;"></canvas>
+	<script src="prototypo.js"></script>
+	<script src="prototypo-canvas.js"></script>
+	<script src="src/lib.js"></script>
+	<script src="src/specimen.js"></script>
+	<script src="src/plugins/jquery.colourbrightness.min.js"></script>
+</html>

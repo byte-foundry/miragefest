@@ -14,10 +14,17 @@
 			<h1>Documentation pour le Mirage fest</h1>
 			<h2>Créer une typo</h2>
 			<p>
-				La seule chose a faire pour créer un typographie paramètrer est d'appeler la fonction <code>Ptypo.createFont( nomTypo );</code>.
+				La seule chose a faire pour créer un typographie paramètrer est d'appeler la fonction <code>Ptypo.createFont( nomTypo, template );</code>.
 			</p>
+
+			<p><code>template</code> peut prendre les valeurs suivantes: 'venus', 'fell', 'elzevir'</p>
+			<p style="color: red;">
+				'elzevir' est encore en développement et donc incomplet.
+			</p>
+
+
 			<p>
-				<br>Une fois la fonction appeler une nouvelle <code>font-family</code> est créer portant le nom <code>nomTypo</code>. Pour utiliser cette nouvelle font-family il suffit dans un fichier css de créer une classe ou un id utilisant cette <code>font-family</code>.
+				<br>Une fois la fonction appelée, une nouvelle <code>font-family</code> est créée portant le nom <code>nomTypo</code>. Pour utiliser cette nouvelle font-family il suffit dans un fichier css de créer une classe ou un id utilisant cette <code>font-family</code>.
 			</p>
 			<h3>Example</h3>
 			<h4>index.html</h4>
@@ -53,7 +60,19 @@ Ptypo.createFont('typo');
 				Hello world!
 			</div>
 			<h2>Changer une typo</h2>
-			<p>Pour change une typo il suffit d'appeler la fonction <code>Ptypo.changeParam( value, paramName, typo);</code></p>
+			<p>Pour changer une typo il suffit d'appeler la fonction <code>Ptypo.changeParam( value, paramName, nomTypo);</code></p>
+
+			<p>
+				Pour paramétrer par défaut les paramètres d'une typo on peut ajouter:
+				<pre>
+					<code>
+Ptypo.createFont(nomTypo, template).then( function() {
+	Ptypo.changeParam( value, paramName, nomTypo);
+});
+					</code>
+				</pre>
+			</p>
+
 			<p><code>paramName</code> peut prendre les valeurs suivantes</p>
 			<table>
 				<thead>
@@ -76,6 +95,10 @@ Ptypo.createFont('typo');
 					<tr>
 						<td>slant</td>
 						<td>Change l'inclinaison des caractères</td>
+					</tr>
+					<tr>
+						<td>etc.</td>
+						<td>Une vingtaine de paramètres sont accessibles. Parlons-en ensemble!</td>
 					</tr>
 				</tbody>
 			</table>
