@@ -1,6 +1,6 @@
-Ptypo.createFont('fontone');
-Ptypo.createFont('fonttwo');
-Ptypo.createFont('fontthree');
+Ptypo.createFont('fontone', 'venus');
+Ptypo.createFont('fonttwo', 'venus');
+Ptypo.createFont('fontthree', 'venus');
 
 function simpleGetComputedStyle(el, styleProp) {
 	return window.getComputedStyle(el, null).getPropertyValue(styleProp);
@@ -79,7 +79,7 @@ function changeSizeToRef(ref, test, start) {
 			fitToMulti(ref);
 			return clearInterval(intervalIds[ref.attributes['data-font'].value + 'fontSize']);
 		}
-		
+
 		var fontSize = test.getFontSize() + 3;
 
 		test.setFontSize(fontSize);
