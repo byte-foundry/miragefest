@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/brightness.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<span><input id="brightness" type="range" min="0" max="255" value="250" step="4"></span>
+		<span class="output">brightness: <span id="show-brightness">16</span></span>
+		<span class="output">thickness: <span id="show-thickness">100</span></span>
+
+		<div class="text optical-elzevir">
+			optical
+			<div class="text optical-elzevir optical-elzevir-default">
+				optical
+			</div>
+		</div>
+
+
+	</body>
+
+	<canvas id="canvas" style="display:none;"></canvas>
+	<script src="prototypo.js"></script>
+	<script src="prototypo-canvas.js"></script>
+	<script src="src/lib-brightness.js"></script>
+	<script src="src/brightness.js"></script>
+</html>

@@ -1,0 +1,65 @@
+.elzevir {
+	font-family: 'Elzevir';
+	src: url('./elzevir.otf');
+}
+
+.elzevir-regular {
+	font-family: 'elzevir-regular';
+}
+.elzevir-light {
+	font-family: 'elzevir-light';
+}
+.elzevir-bold {
+	font-family: 'elzevir-bold';
+}
+.elzevir-sans {
+	font-family: 'elzevir-sans';
+}
+.elzevir-caption {
+	font-family: 'elzevir-caption';
+}
+
+
+body {
+	background-color: #E6E6E6;
+	text-align: center;
+	font-size: 24px;
+	color: #4D4D4D;
+}
+
+.wrap {
+	background-color: white;
+	border-left: 10px solid #49E4A9;
+	padding: 50px;
+	text-align: center;
+	max-width: 800px;
+	margin: 200px auto;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.red {
+	color: #FF725E;
+}
+
+.black {
+	color: #333333;
+}
+
+.value {
+	color: #FF725E;
+	font-size: 16px;
+	font-family: 'elzevir-caption';
+}
+
+.small {
+	font-size: 30px;
+}
+.medium {
+	font-size: 64px;
+}
+.large {
+	font-size: 350px;
+}
